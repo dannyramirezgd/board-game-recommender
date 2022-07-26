@@ -19,7 +19,7 @@ const boardgameSchema = new Schema(
             
         },
         playerCount: {
-            type: Number,
+            type: String,
             required: true,
             trim: true,
             match: [/([1])-([1-99])/, 'Must be range of numbers']
