@@ -15,12 +15,14 @@ const boardgameSchema = new Schema(
         playTime: {
             type: Number,
             required: true,
-            trim: true
+            trim: true,
+            
         },
         playerCount: {
             type: Number,
             required: true,
-            trim: true
+            trim: true,
+            match: [/([1])-([1-99])/, 'Must be range of numbers']
         },
         age: {
             type: Number,
